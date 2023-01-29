@@ -19,7 +19,7 @@ app.use("/api",api);
 const PORT = process.env.PORT || 3001;
 
 // GET reqeust that serves the home page
-app.get('/',(req,res)=> {
+app.get('*',(req,res)=> {
     res.sendFile(path.join(__dirname,"public/index.html"))
 });
 
