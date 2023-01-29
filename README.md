@@ -1,37 +1,21 @@
-# TEAM PROFILE GENERATOR <img src="https://img.shields.io/badge/license-MIT-yellow?style=plastic">
+# NOTE TAKER <img src="https://img.shields.io/badge/license-MIT-yellow?style=plastic">
 
   ## <a id="Description">Description</a> 
 
-  This is a command-line app that's built on node.js with the help of inquirer and jest.
-
-  With this App you can very quickly generate a team roster html page by answering questions prompted by the inquirer package regarding your team members. 
-
-  To start the app, run the command "node index.js", and you'll be prompted to enter the team manager's name, ID, email, and office phone number. If you enter an email address without the "@" symbol, you will be alerted to enter a valid email address, and you'll have to start the manager info process again.
+  This is an app built with node.js with the help of the express package that allows you to take and save notes.
   
-  Once you've entered the manager's info correctly, you'll then be shown the menu containing the following three options:
+  Upon page load, click on "Get Started", and you'll be taken to the note-taking page, where all your previously saved notes will be displayed on the left-side column, each one accompanied by a delete button. When you click on the delete button, that note will be removed and its data deleted from the notes database. If there is no more notes left in the saved list, the message "No Saved Notes" will be displayed.
 
-    1) To add an enginieer onto your team roster
-    2) to add an intern onto your team roster
-    3) To finish the process and complete the team roster as an html file.
+  To enter a new note, click on "Note Title" on the right-side column to type in the note title, and likewise for the note text. Upon completion of both text boxes, a save button will appear at the top-right corner of the page. Click on the save button so that the text content (along with the note's date and time) will be saved into the database and the left-side column will be re-rendered to include the title of the note you just saved. 
+
+  To view the full content of your previously-saved notes, simply click on the note title on the left-side column, and its content will be displayed on the right-side column. If you wish to add a new note, click on the "+" button on the top-right corner of the page to begin entering a new note. 
+
+  Rendering saved notes is achieved by GET requests from the front-end to the server, while saving new notes is done via POST requests and removing previously-saved notes by DELETE requests. 
   
-  If you select more than one option at once, you will be alerted to only select one option to proceed, and you'll be shown the menu again.
+  App screenshots:
+  <img src="./public/assets/images/Screenshot-1.png">
 
-  If you select option (1), you will be prompted to enter the new engineer's name, ID, email, and their GitHub username.
-  Afterwards, you'll be taken back to the menu again.
-
-  If you select option (2), you will be prompted to enter the new intern's name, ID, email, and their school name.
-  Afterwards, you'll be taken back to the menu again.
-
-  If you enter an invalid email (i.e. a string without the "@" symbol), you will be alerted to enter a valid email dress, and you will be taken back to the menu to start again.
-
-  If you select option (3), you will be notified that the team roster has completed, and you'll be able to find the html file in the "html" directory inside the "dist" directory.
-
-  Click <a href="https://app.castify.com/view/13dcf07b-9cfe-4e74-8fb3-c2967a321b9a" target="_blank">HERE</a> for the demo video of this App. (URL: https://app.castify.com/view/13dcf07b-9cfe-4e74-8fb3-c2967a321b9a)
-  
-  Command-line screenshot:
-  <img src="./assets/images/command-lind-screenshot.png">
-  Generated Team Roster html file screenshot:
-  <img src="./assets/images/generated-html-screenshot.png">
+  <img src="./public/assets/images/Screenshot-2.png">
 
 ***
 
@@ -49,13 +33,13 @@
 
   ## <a id="Installation">Installation</a>
 
-  Run this app on your command-line with the command "node index.js"
+  N/A
 
 ***
 
   ## <a id="Usage">Usage</a>
 
-  Use this app to quickly create a team roster that displays your team members' basic info.
+  Use this app to take and save notes.
 
 ***
 
@@ -74,16 +58,7 @@
 
   ## <a id="Tests">Tests</a>
 
-  Tests on this App is done with the help of the jest package, and includes tests on the four classes utilized in this App:
-
-    class Employee
-    class Manager
-    class Engineer
-    class Intern
-
-  Each class is tested on its methods to make sure they return the expected strings.
-
-  Please refer to the test.js modules inside the "_tests_" directory.
+  N/A
   
 
 ***
