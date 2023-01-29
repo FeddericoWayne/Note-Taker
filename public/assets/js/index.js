@@ -71,6 +71,7 @@ const renderActiveNote = () => {
     noteText.removeAttribute('readonly');
     noteTitle.value = '';
     noteText.value = '';
+    
   }
 };
 
@@ -162,7 +163,11 @@ const renderNoteList = async (notes) => {
     const spanEl = document.createElement('span');
     spanEl.classList.add('list-item-title');
     spanEl.innerText = text;
-    spanEl.addEventListener('click', handleNoteView);
+
+    // only add event lister to rendered note if there are notes in the db.json
+    if(jsonNotes.length !== 0) {
+      spanEl.addEventListener('click', handleNoteView);
+    }
 
     liEl.append(spanEl);
 
@@ -187,7 +192,6 @@ const renderNoteList = async (notes) => {
   if (jsonNotes.length === 0) {
     const emptyList = createLi('No Saved Notes', false);
     emptyList.setAttribute("style","cursor:auto; user-select:none");
-
     noteListItems.push(emptyList);
 
   }

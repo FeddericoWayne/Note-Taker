@@ -1,4 +1,4 @@
-// instantiate an express router
+// instantiates an express router
 const notes = require('express').Router();
 // imports node's file system 
 const fs = require('fs');

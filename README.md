@@ -11,6 +11,7 @@
   To view the full content of your previously-saved notes, simply click on the note title on the left-side column, and its content will be displayed on the right-side column. If you wish to add a new note, click on the "+" button on the top-right corner of the page to begin entering a new note. 
 
   Rendering saved notes is achieved by GET requests from the front-end to the server, while saving new notes is done via POST requests and removing previously-saved notes by DELETE requests. 
+
   
   App screenshots:
   <img src="./public/assets/images/Screenshot-1.png">
