@@ -12,6 +12,10 @@
 
   Rendering saved notes is achieved by GET requests from the front-end to the server, while saving new notes is done via POST requests and removing previously-saved notes by DELETE requests. 
 
+  This App is deployed on Heroku at the URL: https://whispering-river-66603.herokuapp.com/
+
+  The URL of the Github repo is: https://github.com/FeddericoWayne/Note-Taker
+
   
   App screenshots:
   <img src="./public/assets/images/Screenshot-1.png">
